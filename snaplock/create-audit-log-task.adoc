@@ -46,7 +46,11 @@ xref:create-snaplock-aggregate-task.adoc[Create a SnapLock aggregate]
 . On the SVM that you want to configure for audit logging, create a SnapLock volume.
 +
 xref:create-snaplock-volume-task.adoc[Create a SnapLock volume]
-
++
+[NOTE]
+====
+The recommended security-style for SnapLock audit log volumes is unix
+====
 . Configure the SVM for audit logging:
 +
 `*snaplock log create -vserver _SVM_name_ -volume _snaplock_volume_name_ -max-file-size _size_ -retention-period _default_retention_period_*`
